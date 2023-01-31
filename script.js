@@ -1,6 +1,5 @@
 
 
-
 const cursor = document.querySelector(".circle-cursor");
 
 document.addEventListener("mousemove", e => {
@@ -16,15 +15,7 @@ document.addEventListener("mouseout", () => {
   cursor.style.transform = "scale(1)";
 });
 
-(function() {
 
-    vid_w_orig = parseInt($('video').attr('width'));
-    vid_h_orig = parseInt($('video').attr('height'));
-
-    $(window).resize(function () { fitVideo(); });
-    $(window).trigger('resize');
-
-});
 
 function fitVideo() {
 
