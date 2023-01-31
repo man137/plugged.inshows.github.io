@@ -47,9 +47,23 @@ h1 + p { font-family: "Shadows Into Light Two", cursive; font-size: 1.5em;  }
     box-sizing: border-box;
 }
 html,body{
+    cursor: none;
     height: 100%;
     width: 100%;
 }
+.circle-cursor {
+    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+    width: 70px;
+    cursor: none;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.641);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition:cubic-bezier(0.19, 1, 0.22, 1)1s;
+  }
+  
 #main{
     height: 100vh;
     overflow: hidden;
@@ -60,17 +74,14 @@ html,body{
     
 }
 
-.circle-cursor {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #333;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 0.2s ease-in-out;
+#cursor{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    mix-blend-mode: difference;
+    background-color: red;
+    border-radius: 50%;
 }
-
 #cus{
 position: absolute;
 top: 27%;
