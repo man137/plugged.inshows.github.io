@@ -64,15 +64,144 @@ gsap.from("#lorem",{
 })
 
 
-gsap.to("#waves",{
+gsap.to(".z",{
     duration: 2,
     scrollTrigger: {
 
 trigger: ".z",
-scrub: true,
+scrub: 2,
     },
     y: -80
 })
+
+
+gsap.to(".i",{
+  duration: 2,
+  scrollTrigger: {
+
+trigger: ".i",
+scrub: 2,
+  },
+  y: -84
+})
+
+gsap.to(".m",{
+  duration: 2,
+  scrollTrigger: {
+
+trigger: ".m",
+scrub: 2,
+  },
+  y: -88
+})
+
+gsap.to(".a",{
+  duration: 2,
+  scrollTrigger: {
+
+trigger: ".a",
+scrub: 2,
+  },
+  y: -92
+})
+
+gsap.to("#p",{
+  duration: 2,
+  delay: .2,
+  scrollTrigger: {
+
+trigger: "#p",
+scrub: 2,
+  },
+  y: -92
+})
+
+
+gsap.to(".c",{
+  duration: 2,
+  scrollTrigger: {
+
+trigger: ".c",
+scrub: 2,
+  },
+  y: -96
+})
+
+gsap.to(".b",{
+  duration: 2,
+  scrollTrigger: {
+
+trigger: ".b",
+scrub: 2,
+  },
+  y: -100
+})
+
+gsap.to(".w",{
+  duration: 2,
+  scrollTrigger: {
+
+trigger: ".w",
+scrub: 2,
+  },
+  y: -104
+})
+
+gsap.to(".e",{
+  duration: 2,
+  scrollTrigger: {
+
+trigger: ".e",
+scrub: 2,
+  },
+  y: -108
+})
+
+
+
+gsap.to(".i",{
+  duration: 2,
+  scrollTrigger: {
+
+trigger: ".i",
+scrub: 2,
+  },
+  y: -102
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 gsap.to("#nav",{
     opacity: 1,
     duration: 1,
