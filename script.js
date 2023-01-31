@@ -1,17 +1,20 @@
 
 
 
-var cursor=document.querySelector("#cursor")
+const cursor = document.querySelector(".circle-cursor");
 
+document.addEventListener("mousemove", e => {
+  cursor.style.left = `${e.pageX}px`;
+  cursor.style.top = `${e.pageY}px`;
+});
 
-document.addEventListener("mousemove",function(dets){
-    cursor.style.left=`${dets.x}px`
-    cursor.style.top=`${dets.y}px`
-    cursor.style.backgroundColor="white"
-})
-var min_w = 300;
-var vid_w_orig;
-var vid_h_orig;
+document.addEventListener("click", () => {
+  cursor.style.transform = "scale(2)";
+});
+
+document.addEventListener("mouseout", () => {
+  cursor.style.transform = "scale(1)";
+});
 
 (function() {
 
